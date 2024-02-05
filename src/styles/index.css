@@ -1,12 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 
-/* 
+html body{
+  height: 100%;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+body{
+  text-align: center;
+  font-family: Montserrat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 
-*/
+h1 {
+  font-size: 4em;
+  color: #c292a2;
+  margin-top: 100px;
+}
+.todo-list {
+  box-shadow: 0em 0.2em 0.5em #00000030, 0em 0.5em 0em -0.2em #ffffff,
+    0em 0.7em 0.5em -0.2em #00000030, 0em 1em 0em -0.4em #ffffff,
+    0em 1.2em 0.5em -0.4em #00000030, 0em 1.5em 0em -0.6em #ffffff,
+    0em 1.7em 0.5em -0.6em #00000030;
+  min-width: 28em;
+  min-height: 20em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  transition: min-width 1s ease, min-height 1s ease, box-shadow 1s ease;
+
+}
+
+.todo-list:hover, .todo-list:focus-within{
+  min-width: 29em;
+  min-height: 21em;
+  box-shadow: 0em 0.2em 0.5em #00000030, 0em 0.5em 0em -1em #ffffff,
+  0em 0.7em 0.5em -1em #00000030, 0em 1em 0em -1.2em #ffffff,
+  0em 1.2em 0.5em -1.2em #00000030, 0em 1.5em 0em -1.4em #ffffff,
+  0em 1.7em 0.5em -1.4em #00000030;
+}
+
+.todo-list input {
+  border: none;
+  font-size: 2em;
+  transition: box-shadow 1s ease;
+  border-bottom: 0.05em solid #eeeeee;
+}
+
+.todo-list input:focus {
+  outline: none;
+  box-shadow: inset 0em 0em 0.3em -0.1em #00000033;
+}
+
+.todo-list li {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+}
+
+.todo-list li > span {
+  font-size: 1.5em;
+}
+
+.todo-list li > button {
+  text-align: center;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 25%;
+  border: none;
+  background-color: #ffffff00;
+}
+
+.todo-list li > button:hover {
+  background-color: #dddddd;
+}
+
+.todo-list li> button:first-of-type{
+  margin-left: auto;
+}
+
+.todo-list>span {
+  margin-top: auto;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0em 0.2em 0.5em #00000030;
+  padding: 1em;
+}
+
+.login *{
+  margin-bottom: 1em;
+}
+
+.fa-trash {
+  color: #c292a2; 
+  font-size: 20px; 
+  background-color: transparent; 
+  border: none; 
+}
+
+.fa-trash:hover {
+  color: #9b7682; 
+}
+
+p {
+  font-size:1.2em;
+  color: #c292a2; 
+  font-style: italic;
+  margin-top: 10px; 
+}
+
+
